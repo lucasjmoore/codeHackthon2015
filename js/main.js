@@ -164,7 +164,7 @@ function getModelSelectOptions(selectionValue){
     else{
       // Handle if something went wrong getting the server response.
       // document.querySelector("#accordion").innerHTML = "Error getting data from server! HTTP.status=" + xmlhttpBrand.status;
-      document.querySelector("#accordion").innerHTML = '<div class="progress" style="display: none;" id="recallLoadingBar"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><span class="sr-only">45% Complete</span></div></div>';
+      document.querySelector("#accordion").innerHTML = '<div class="progress" id="recallLoadingBar"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><span class="sr-only">Fetching Data</span></div></div>';
     
     }
   }
@@ -184,7 +184,8 @@ function getModelSelectOptions(selectionValue){
     else{
       // Handle if something went wrong getting the server response.
       // document.querySelector("#accordion").innerHTML = "Error getting data from server! HTTP.status=" + xmlhttpModel.status;
-      document.querySelector("#accordion").innerHTML = '<div class="progress" style="display: none;" id="recallLoadingBar"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><span class="sr-only">45% Complete</span></div></div>';
+      document.querySelector("#accordion").innerHTML = '<div class="progress"  id="recallLoadingBar"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><span class="sr-only">Fetching Data</span></div></div>';
+      // style="display: none;"
     }
 
   }
@@ -204,7 +205,7 @@ function getModelSelectOptions(selectionValue){
     else{
       // Handle if something went wrong getting the server response.
       // document.querySelector("#accordion").innerHTML = "Error getting data from server! HTTP.status=" + xmlhttpYear.status;
-      document.querySelector("#accordion").innerHTML = '<div class="progress" style="display: none;" id="recallLoadingBar"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><span class="sr-only">45% Complete</span></div></div>';
+      document.querySelector("#accordion").innerHTML = '<div class="progress" " id="recallLoadingBar"><div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"><span class="sr-only">Fetching Data</span></div></div>';
     }
   }
 
