@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ReportCar</title>
+    <title>Spec Car</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.3.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/flatly.css">
@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/2015_gas.js" type="text/javascript"></script>
     
 </head>
 
@@ -28,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><i class="fa fa-car"></i> ReportCars</a>
+          <a class="navbar-brand" href="#"><i class="fa fa-car"></i>Spec Car</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse" >
           <ul class="nav navbar-nav">
@@ -191,7 +192,7 @@
     
     <br>
     <div class="container well" id="recalls">
-         <h4>Recalls</h4>
+         <h4>RedFlags</h4>
          <h4 class="col-xs-4 col-xs-offset-1"><strong>Year</strong></h4>
          <h4 class="col-xs-4"><strong>Model</strong></h4>
          <br>
@@ -211,7 +212,7 @@
 
     <div class="container well" id="emissions">
         <h4>Gas Emissions</h4>
-        <div class="progress" style="background-color:#aaa; height:20px;">
+        <div id="emissions-bar" class="progress" style="background-color:#aaa; height:20px;">
             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
             <div class="progress-bar progress-bar-danger" style="width: 75%"></div>
         </div>

@@ -52,10 +52,6 @@ else{
 }
   
   
-  
-  
-  
-
 
 function brandSelection(selectionValue)
 {
@@ -73,15 +69,6 @@ function brandSelection(selectionValue)
 //ajax return is going to return model options for select statement
   //document.querySelector("#model_select").innerHTML='<select class="form-control col-xs-4"  onChange="modelSelection(this.value);"><option value="Model">Select a Model</option><option value="F150">F150</option><option value="F350">F350</option><option value="Granada">Granada</option><option value="Mustang">Mustang</option><option value="Pinto">Pinto</option></select>';
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -112,6 +99,70 @@ function yearSelection(selectionValue)
   }
 	
 	sendYearAjax(selectionValue);
+
+  if(seelctionVale == 2015){
+    alert("SELECTIONVALUE:!"+selectionValue);
+
+    //highest gas emissions on the char is 453
+    var emissionsPercentage = (gasData[i].EMISSIONS * 2)/10;
+    console.log("emissionsPercentage: "+emissionsPercentage);
+
+    var fillerBar = 1000-emissionsPercentage;
+    
+
+
+
+     document.querySelector("#emissions-bar").innerHTML='<div class="progress-bar progress-bar-success" style="width: '+ fillerBar +'%"></div><div class="progress-bar progress-bar-danger" style="width: ' + emissionsPercentage + '%"></div>';
+
+  }
+  
+
+
+
+
+
+
+
+
+console.log(recallData[0].MAKE_NAME_NM);
+
+ // Check if the user string is empty and exit the function right away if it is.
+  if (selectionValue=="Brand")
+  { 
+    document.querySelector("#model_select").innerHTML='<select class="form-control col-xs-4"  onChange="modelSelection(this.value);" disabled><option value="Model">Select a Model</option></select';
+    return;
+  }
+
+
+var htmlMakeOutput ='<select class="form-control col-xs-4"  onChange="modelSelection(this.value);"><option value="Model">Select a Model</option>main.js";'
+
+for (var i = 0; i < gasData.length; i++) {
+  // console.log(gasData[i].YEAR);
+
+  var tempSelectionValue = selectionValue.toUpperCase(); 
+
+  if(gasData[i].MAKE == tempSelectionValue){
+    console.log(gasData[i].MODEL);
+    htmlMakeOutput += '<option value="'+gasData[i].MODEL+'">'+gasData[i].MODEL+'/option>';
+  }
+
+  document.querySelector("#model_select").innerHTML=htmlMakeOutput;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -143,10 +194,6 @@ function getModelSelectOptions(selectionValue){
 	// Then send the message.
 	xmlhttpGetModel.send();
 }
-
-
-
-
 
 
 
@@ -227,24 +274,3 @@ function getModelSelectOptions(selectionValue){
       document.querySelector("#model_select").innerHTML = '<select class="form-control col-xs-4"  onChange="modelSelection(this.value);" disabled><option value="Model">Select a Model</option></select>';
     }
   }
-
-
-
-
-
-
-
-
-
-
-// function hacks(){
-// var str;
-// for (var i = 2015; i >= 1970; i--) {
-
-//   str+='<option value="'+i+'">'+i+'</option>';
-// };
-
-// console.log(str);
-// }
-
-
