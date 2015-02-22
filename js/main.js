@@ -95,10 +95,10 @@ function yearSelection(selectionValue)
   { 
     document.querySelector("#model_select").innerHTML='<select class="form-control col-xs-4"  onChange="modelSelection(this.value);" disabled><option value="Model">Select a Model</option></select>';
     document.querySelector("#accordion").innerHTML='';
-    return;
+    return;     
   }
-}
-	function sendYearAjax(selectionValue);
+
+sendYearAjax(selectionValue);
 
     if(selectionVale == 2015){
       alert("SELECTIONVALUE:!"+selectionValue);
@@ -108,9 +108,7 @@ function yearSelection(selectionValue)
       console.log("emissionsPercentage: "+emissionsPercentage);
 
       var fillerBar = 1000-emissionsPercentage;
-    
-
-       document.querySelector("#emissions-bar").innerHTML='<div class="progress-bar progress-bar-success" style="width: '+ fillerBar +'%"></div><div class="progress-bar progress-bar-danger" style="width: ' + emissionsPercentage+ '%"></div>';
+      document.querySelector("#emissions-bar").innerHTML='<div class="progress-bar progress-bar-success" style="width: '+ fillerBar +'%"></div><div class="progress-bar progress-bar-danger" style="width: ' + emissionsPercentage+ '%"></div>';
     }
   }  
 
