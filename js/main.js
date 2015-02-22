@@ -100,7 +100,7 @@ function yearSelection(selectionValue)
 
 sendYearAjax(selectionValue);
 
-    if(selectionVale == 2015){
+    if(selectionValue == 2015){
       alert("SELECTIONVALUE:!"+selectionValue);
 
       //highest gas emissions on the char is 453
