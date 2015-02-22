@@ -104,7 +104,7 @@ sendYearAjax(selectionValue);
       alert("SELECTIONVALUE:!"+selectionValue);
 
       //highest gas emissions on the char is 453
-      var emissionsPercentage = (gasData[0].EMISSIONS * 2)/10;
+      var emissionsPercentage = (gasData[11].EMISSIONS * 2)/10;
       console.log("emissionsPercentage: "+emissionsPercentage);
 
       var fillerBar = 1000-emissionsPercentage;
