@@ -56,10 +56,12 @@ else{
 function brandSelection(selectionValue)
 {
   //alert(selectionValue);
+  
+  document.querySelector("#model_select").innerHTML = '<select class="form-control col-xs-4"  onChange="modelSelection(this.value);" disabled><option value="Model">Select a Model</option></select>';
   // Check if the user string is empty and exit the function right away if it is.
   if (selectionValue=="Brand")
   { 
-    document.querySelector("#model_select").innerHTML='<select class="form-control col-xs-4"  onChange="modelSelection(this.value);" disabled><option value="Model">Select a Model</option></select>';
+    // document.querySelector("#model_select").innerHTML='<select class="form-control col-xs-4"  onChange="modelSelection(this.value);" disabled><option value="Model">Select a Model</option></select>';
     document.querySelector("#accordion").innerHTML='';
     return;
   }
