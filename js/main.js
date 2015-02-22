@@ -97,7 +97,7 @@ function yearSelection(selectionValue)
     document.querySelector("#accordion").innerHTML='';
     return;
   }
-	
+}
 	function sendYearAjax(selectionValue);
 
     if(seelctionVale == 2015){
