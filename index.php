@@ -4,7 +4,7 @@
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ReportCar</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="http://bootswatch.com/flatly/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/flatly.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
