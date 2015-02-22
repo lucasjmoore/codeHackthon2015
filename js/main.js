@@ -160,7 +160,7 @@ function yearSelection(selectionValue)
 
 
 
-}
+
 
 
 function sendBrandAjax(selectionValue){
